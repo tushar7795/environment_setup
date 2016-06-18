@@ -26,7 +26,7 @@
     path = C:/Program Files (x86)/Beyond Compare 3/bcomp.exe
     trustExitCode = true
 [core]
-	excludesfile = /Users/tushar/.gitignore_global
+	excludesfile = /Users/tushar7795/.gitignore_global
 [help]
     autocorrect = 1
 [difftool "sourcetree"]
@@ -35,3 +35,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[user]
+	email = tksantoki@gmail.com
+	name = tushar7795

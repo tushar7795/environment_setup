@@ -82,19 +82,13 @@ source $ZSH/oh-my-zsh.sh
 
 alias ll='ls -lah'
 alias gg='git status -s'
-
-export PATH=$PATH:~/Tools/Android/sdk/tools/:~/Tools/Android/sdk/platform-tools/:~/Tools/eclipse/
-export PATH="$PATH:~/Downloads/apache-maven-3.0.5/bin/"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+alias g++='g++-5 --std=c++1y'
 
 alias adbk='adb kill-server'
 alias adbd='adb devices'
 alias adbr='adb root'
 alias adbc='adb connect %1'
-export PATH=/usr/local/bin:/Users/tushar/.rvm/gems/ruby-1.9.3-p448/bin:/Users/tushar/.rvm/gems/ruby-1.9.3-p448@global/bin:/Users/tushar/.rvm/rubies/ruby-1.9.3-p448/bin:/Users/tushar/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/tushar/Tools/Android/sdk/tools/:/Users/tushar/Tools/Android/sdk/platform-tools/:/Users/tushar/Tools/eclipse/:~/Downloads/apache-maven-3.0.5/bin/
-export GOROOT="/usr/local/go/"
 
-alias play='java -jar /Users/tushar/Tools/google-play-crawler/googleplay/googleplaycrawler-0.3.jar -f /Users/tushar/Tools/google-play-crawler/googleplay/crawler.conf' 
 alias cpython='ipython --classic --autoindent'
 alias myip="ifconfig |grep inet|awk '{print $2}'"
 alias mitm='mitmproxy -b 0.0.0.0 -p 8080'
@@ -103,10 +97,9 @@ function tabname {
     printf "\e]1;$1\a"
 }
 
-export WORKON_HOME=$HOME/.virtualenv
-export PROJECT_HOME=$HOME/dev/
 source /usr/local/bin/virtualenvwrapper.sh
-PATH=/usr/local/bin:/Users/tushar/.rvm/gems/ruby-1.9.3-p448/bin:/Users/tushar/.rvm/gems/ruby-1.9.3-p448@global/bin:/Users/tushar/.rvm/rubies/ruby-1.9.3-p448/bin:/Users/tushar/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/tushar/Tools/Android/sdk/tools/:/Users/tushar/Tools/Android/sdk/platform-tools/:/Users/tushar/Tools/eclipse/:/Users/tushar/Downloads/apache-maven-3.0.5/bin/:/usr/local/go/bin
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I rc'
-export GOPATH="$HOME/Workspace/go"
-export PATH=/usr/local/bin:/Users/tushar/.rvm/gems/ruby-1.9.3-p448/bin:/Users/tushar/.rvm/gems/ruby-1.9.3-p448@global/bin:/Users/tushar/.rvm/rubies/ruby-1.9.3-p448/bin:/Users/tushar/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/tushar/Tools/Android/sdk/tools/:/Users/tushar/Tools/Android/sdk/platform-tools/:/Users/tushar/Tools/eclipse/:/Users/tushar/Downloads/apache-maven-3.0.5/bin/:/usr/local/go/bin:/Users/tushar/Workspace/go/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/mysql/bin/
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
