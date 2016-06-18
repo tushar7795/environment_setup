@@ -82,6 +82,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ll='ls -lah'
 alias gg='git status -s'
+alias ss='git status'
 alias g++='g++-5 --std=c++1y'
 
 alias adbk='adb kill-server'
