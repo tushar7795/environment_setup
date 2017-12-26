@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/tushar/Workspace/Practo/ChronosWeb/.git'
+let g:netrw_dirhist_2='/Users/tushar7795/Reach/Test'
+let g:netrw_dirhist_3='/Users/tushar7795/Reach/reach-common/src/main/resources/liquibase'
+let g:netrw_dirhist_4='/Users/tushar7795/Reach/reach-segment/src'

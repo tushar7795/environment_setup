@@ -14,6 +14,10 @@
     ckdt = checkout dev-tushar
     stat = !git status && git log1 && git remote show origin
     hardreset = !git status && git diff && git reset --hard && git clean -f
+    st = status
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    br = branch
+    co = commit
 [color]
     ui = true
 [merge]
@@ -27,6 +31,7 @@
     trustExitCode = true
 [core]
 	excludesfile = /Users/tushar7795/.gitignore_global
+	editor = vim
 [help]
     autocorrect = 1
 [difftool "sourcetree"]

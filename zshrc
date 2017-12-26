@@ -82,25 +82,33 @@ source $ZSH/oh-my-zsh.sh
 
 alias ll='ls -lah'
 alias gg='git status -s'
-alias ss='git status'
 alias g++='g++-5 --std=c++1y'
 
 alias adbk='adb kill-server'
 alias adbd='adb devices'
 alias adbr='adb root'
 alias adbc='adb connect %1'
-
+alias clean_classes='rm *.class'
 alias cpython='ipython --classic --autoindent'
 alias myip="ifconfig |grep inet|awk '{print $2}'"
 alias mitm='mitmproxy -b 0.0.0.0 -p 8080'
+
+if [ -f ~/.staging_aliases ]; then
+    source ~/.staging_aliases
+fi
+
+alias refresh_staging_addresses='python ~/Personal/sfctrl/staging_aliases_generator.py;source ~/.staging_aliases;'
+alias refresh_aliases='source ~/.staging_aliases'
 
 function tabname {
     printf "\e]1;$1\a"
 }
 
-source /usr/local/bin/virtualenvwrapper.sh
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I rc'
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/mysql/bin/
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+ssh-add -K ~/.ssh/id_rsa
+
